@@ -1,5 +1,7 @@
 # APF Checker
 
+![lrWvL3wtVP](https://user-images.githubusercontent.com/69066026/163753453-71548916-1d94-45fb-af6c-1073fcf4176a.gif)
+
 The Anime Pillow Fund (APF) Checker is a tool to give out the "Sponsor" role automatically to anyone that can complete the
 oAuth2 authentication process and have a linked GitHub account that sponsors [discord.js](https://github.com/sponsors/discordjs).
 
@@ -11,9 +13,9 @@ As a bonus it will return the `user` object and an extra `supportsAPF` boolean p
 
 ## Example Flow
 
-1. User visits https://example.com/apf
+1. User visits `https://example.com/apf`
 2. User is redirected to Discord's oAuth2 authentication page
-3. User is redirected to https://example.com/oauth/callback?code=<code>
+3. User is redirected to `https://example.com/oauth/callback?code=code`
 4. Frontend fetches back the user object and the `supportsAPF` boolean property to see if the user is a sponsor to give an indicator to the user
     ```ts
     const data: APILogin = await Nico.post(`/oauth/callback`, {
